@@ -199,5 +199,40 @@
         "recoil": 30
     },
     "delete": { "effects": [ "SHOT" ] }
+  },
+  {
+    "id" : "shot_plutonium",
+    "copy-from": "shot_slug",
+    "type" : "AMMO",
+    "name" : "fission slug",
+    "description" : "An Ultra-heavy slug consisting of a plutonium cell shoved into a shell. This is possibly the most dangerously stupid, and stupidly dangerous shot you can ever use",
+    "price" : 20000,
+    "proportional": {
+        "damage": 15,
+        "dispersion": 1.4
+    },
+    "relative": {
+        "pierce": 11,
+        "range": 5,
+        "recoil": 50
+        "effects" : ["COOKOFF", "EXPLOSIVE_LARGE"] "//" : "Yes it's completely intended that you risk splashing yourself with the explosion. This is meant to be ~FUN~!, as if the description doesn't give it away."
+    }, 
+    {
+    "id" : "shot_rocket",
+    "copy-from": "shot_00",
+    "type" : "AMMO",
+    "name" : "Rocket Shot",
+    "description" : "This beautiful bastard of a shell uses Rocket Candy as it's shot. It has the fun effect of both igniting, and exploding whatever you shoot it at, but does very little damage on its own",
+    "price" : 4500,
+    "proportional": {
+        "damage": 1.2,
+        "dispersion": 1.3
+    },
+    "relative": {
+        "pierce": 3,
+        "range": 6,
+        "recoil": 30
+        "effects" : ["COOKOFF", "SHOT", "EXPLOSIVE_SMALL", "IGNITE"]
+    },
   }
 ]
